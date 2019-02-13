@@ -17,7 +17,7 @@ public class Main {
         System.out.print("STRING AFTER ENCRYPTION: ");
 
         Encrypt encrypt = new Encrypt();
-        System.out.print(encrypt.moderateEncrypt(userInput)); // change to encrypt.basicEncrypt for basic encryption
+        System.out.print(encrypt.basicEncrypt(userInput)); // change to encrypt.moderateEncrypt for more advanced encryption
 
         System.out.println(" ");
         System.out.println(" ");
