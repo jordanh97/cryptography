@@ -1,8 +1,13 @@
 import java.util.Scanner;
+import java.lang.Thread;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void sleep(long millis) throws InterruptedException {
+
+    }
+
+    public static void main(String[] args) throws Exception {
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println(" ");
@@ -13,6 +18,17 @@ public class Main {
 
         System.out.println(" ");
         System.out.println("'?-/|?' ENCRYPTING '?-/|?'");
+
+        for(int z = 1; 14 > z; z++) {
+            try {
+                Thread.sleep(150);
+                System.out.print("*?");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        System.out.println(" ");
         System.out.println(" ");
         System.out.print("STRING AFTER ENCRYPTION: ");
 
