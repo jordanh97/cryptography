@@ -31,9 +31,8 @@ public class Encrypt {
 
         do {
             char charValue = input.charAt(h);
-            int newIntValue = (int) charValue * 43;
-            int middleInt = newIntValue / 12;
-            int lastInt = middleInt -234;
+            int newIntValue = (int) charValue + 72;
+            int lastInt = newIntValue + h;
             char newCharValue = (char)lastInt;
             output = new StringBuffer(output).insert(h, newCharValue).toString();
 
